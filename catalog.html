@@ -2,6 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon/32.svg" type="image/svg+xml">
+    <link rel="manifest" href="manifest.webmanifest">
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
@@ -27,7 +30,7 @@
 	  			<a class="header__basket" href="#">Корзина</a>
 	  		</nav>
       </header>
-      <main calss="container">
+      <main class="container">
         <section class="title">
           <h1 class="title__hidden">Нёрдс</h1>
           <h2 class="title__page">Магазин готовых шаблонов</h2>
@@ -43,15 +46,15 @@
               </fieldset>
               <fieldset class="filter__grid">
                 <legend>Сетка:</legend>
-                <input type="radio" name="grid" id="grid" checked><label>Адаптивная</label>
-                <input type="radio" name="grid" id="grid"><label>Фиксированная</label>
-                <input type="radio" name="grid" id="grid"><label>Резиновая</label>
+                <input type="radio" name="grid" id="grid_1" checked><label>Адаптивная</label>
+                <input type="radio" name="grid" id="grid_2"><label>Фиксированная</label>
+                <input type="radio" name="grid" id="grid_3"><label>Резиновая</label>
               </fieldset>
               <fieldset class="filter__features">
                 <label for="slider" >Слайдер</label>
                 <input type="checkbox" name="slider" id="slider" checked>
-                <label for="block">Блок преимуществ</label>
-                <input type="checkbox" name="block" id="block">
+                <label for="advantages">Блок преимуществ</label>
+                <input type="checkbox" name="advantages" id="advantages">
                 <label for="news">Новости</label>
                 <input type="checkbox" name="news" id="news" checked>
                 <label for="gallery">Галерея</label>
@@ -66,7 +69,7 @@
           </div>
           <div class="content__block right">
             <form class="sort">
-              <filedset class="sort__block">
+              <fieldset class="sort__block">
                 <legend>Сортировать:</legend>
                 <ul>
                   <li><a href="#">По цене</a></li>
@@ -77,28 +80,28 @@
                   <button type="button">up</button>
                   <button type="button">down</button>
                 </div>
-              </filedset>
+              </fieldset>
             </form>
             <div class="project">
               <div class="project__card">
-                <img src="img/project/sedona.png" alt="sedona">
+                <img src="img/project/sedona.png" alt="sedona" width="358" height="578">
                 <div class="project__hidden">
                   <h3 class="project__title">SEDONA</h3>
                   <p class="project__info">Информационный сайт для туристов</p>
                     <a class="project__link">9 900 ₽</a>
                 </div>
               </div>
-              <div class="project__card"><img src="img/project/pink.png" alt="pink"></div>
-              <div class="project__card"><img src="img/project/barbershop.png" alt="barbershop"></div>
-              <div class="project__card"><img src="img/project/mishka.png" alt="mishka"></div>
-              <div class="project__card"><img src="img/project/aplus.png" alt="aplus"></div>
-              <div class="project__card"><img src="img/project/kvast.png" alt="kvast"></div>
+              <div class="project__card"><img src="img/project/pink.png" alt="pink" width="358" height="578"></div>
+              <div class="project__card"><img src="img/project/barbershop.png" alt="barbershop" width="358" height="578"></div>
+              <div class="project__card"><img src="img/project/mishka.png" alt="mishka" width="358" height="578"></div>
+              <div class="project__card"><img src="img/project/aplus.png" alt="aplus" width="358" height="578"></div>
+              <div class="project__card"><img src="img/project/kvast.png" alt="kvast" width="358" height="578"></div>
             </div>
           </div>
         </section>
         <section class="contact">
           <div class="contact__map">
-            <img src="img/map.jpg" alt="Карта">
+            <img src="img/map.jpg" alt="Карта" width="1440" height="416">
             <div class="contact__point">Метка на карте</div>
           </div>
           <div class="contact__block">
@@ -112,14 +115,14 @@
       <footer class="footer">
         <div class="footer__block left">
           <ul class="footer__social">
-            <li><a href="#"><img src="img/social/vk.svg" alt="vk"></a></li>
-            <li><a href="#"><img src="img/social/fb.svg" alt="fb"></a></li>
-            <li><a href="#"><img src="img/social/insta.svg" alt="insta"></a></li>
+            <li><a href="#"><img src="img/social/vk.svg" alt="vk" width="26" height="15"></a></li>
+            <li><a href="#"><img src="img/social/fb.svg" alt="fb" width="26" height="15"></a></li>
+            <li><a href="#"><img src="img/social/insta.svg" alt="insta" width="26" height="15"></a></li>
           </ul>
         </div>
         <div class="footer__block right">
           <h2 class="footer__title">Давайте дружить, это выгодно!</h2>
-          <p calss="footer__info">Скидка 10% для друзей из социальных сетей.</p>
+          <p class="footer__info">Скидка 10% для друзей из социальных сетей.</p>
         </div>
       </footer>
   </body>
