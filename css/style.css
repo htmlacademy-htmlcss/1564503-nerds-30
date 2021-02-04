@@ -7,6 +7,8 @@
   --white: #FFFFFF;
   --grey-light: #666666;
   --grey-social: #E1E1E1;
+  --black-input: #283136;
+
 }
 
 body {
@@ -189,4 +191,91 @@ table p {
   font-size: 16px;
   line-height: 22px;
 }
+
+.title__page {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.content legend {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.filter__grid {
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--black-radio)
+}
+
+.filter__features {
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--black-radio)
+}
+
+.filter__button button{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--black);
+  background-color: var(--grey);
+  padding: 10px;
+  border: none;
+}
+
+.sort__block legend {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+fieldset {
+  border: none;
+}
+
+.sort__block .active {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--black);
+  opacity: 1;
+}
+
+.sort__block a {
+  font-size: 14px;
+  line-height: 18px;
+  opacity: 0.3;
+}
+
+.project__title{
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.project__info {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.project__link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--white);
+  background-color: var(--red);
+  padding: 10px 20px;
+  border: none;
+  
+}
+
+.project__hidden {
+  background-color: var(--grey);
+}
+
+
+
+
 
