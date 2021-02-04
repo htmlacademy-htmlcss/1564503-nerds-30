@@ -13,14 +13,23 @@
 
 body {
   min-width: 960px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   font-family: "Roboto",sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   color: var(--black);
+  min-height: 100%;
+  
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
+.page {
+  height: 100%;
+}
+
 
 a {
   text-decoration: none;
@@ -30,14 +39,35 @@ ul {
   list-style: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .title__hidden {
   font-size: 0px;
   display: none;
 }
 
 .container {
+  width: 960px;
+  min-height: 100%;
   margin: 0 auto;
 }
+
+header {
+  display: grid;
+  grid-template-columns:  1fr;
+  align-content: center;
+  background-color: var(--grey);
+}
+
+.header__navigation {
+  display: grid;
+  grid-template-columns: 160px 1fr min-content;
+}
+
+
 
 .header__list li a,
 .header__basket {
@@ -59,6 +89,10 @@ ul {
   border-bottom: 2px solid var(--red);
 } 
 
+.slider {
+  background-color: var(--grey);
+}
+
 .slider h2 {
   font-weight: 500;
   font-size: 55px;
@@ -75,6 +109,24 @@ ul {
   color: var(--white);
   background-color: var(--red);
   padding: 10px;
+}
+
+.slider__item.item2,
+.slider__item.item3 {
+  display: none;
+}
+
+.slider__item {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+}
+.slider {
+  margin-bottom: 80px;
+}
+.product {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  margin-bottom: 80px;
 }
 
 .product h3 {
@@ -102,6 +154,12 @@ ul {
 
 .product .product__link-yellow {
   background-color: var(--yellow);
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  margin-bottom: 80px;
 }
 
 .about__title {
@@ -141,6 +199,12 @@ table p {
   line-height: 18px;
 }
 
+.companies {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-bottom: 80px;
+}
+
 .companies__block img {
   opacity: 0.2;
 }
@@ -171,6 +235,11 @@ table p {
   border: none;
 }
 
+.footer {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+}
+
 .footer a {
   background-color: var(--grey-social);
   width: 81px;
@@ -179,6 +248,11 @@ table p {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+}
+
+.footer a img {
+  max-width: 25px;
+  height: 15px;
 }
 
 .footer h2 {
@@ -192,10 +266,22 @@ table p {
   line-height: 22px;
 }
 
+.title {
+  background-color: var(--grey);
+  padding: 50px;
+}
+
 .title__page {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
+  margin: 0 auto;
+  width: max-content;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 400px 1fr;
 }
 
 .content legend {
@@ -224,6 +310,12 @@ table p {
   background-color: var(--grey);
   padding: 10px;
   border: none;
+}
+
+.sort__block {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 .sort__block legend {

@@ -32,13 +32,13 @@
   				</li>
 	  			</ul>
 	  			<a class="header__basket" href="#">Корзина</a>
-	  		</nav>
+        </nav>
       </header>
+      <section class="title">
+        <h1 class="title__hidden">Нёрдс</h1>
+        <h2 class="title__page">Магазин готовых шаблонов</h2>
+      </section>
       <main class="container">
-        <section class="title">
-          <h1 class="title__hidden">Нёрдс</h1>
-          <h2 class="title__page">Магазин готовых шаблонов</h2>
-        </section>
         <section class="content">
           <div class="content__block left">
             <form class="filter" method="GET">
@@ -73,8 +73,8 @@
           </div>
           <div class="content__block right">
             <form class="sort">
-              <fieldset class="sort__block">
-                <legend>Сортировать:</legend>
+              <div class="sort__block">
+                <span>Сортировать:</span>
                 <ul>
                   <li><a href="#" class="active">По цене</a></li>
                   <li><a href="#">По типу</a></li>
@@ -84,7 +84,7 @@
                   <button type="button">up</button>
                   <button type="button">down</button>
                 </div>
-              </fieldset>
+              </div>
             </form>
             <div class="project">
               <div class="project__card">
@@ -116,7 +116,7 @@
           </div>
         </section>
       </main>
-      <footer>
+      <footer class="footer container">
         <div class="footer__block left">
           <ul class="footer__social">
             <li><a href="#"><img src="img/social/vk.svg" alt="vk" width="26" height="15"></a></li>
