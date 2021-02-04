@@ -96,11 +96,11 @@ ul {
   padding: 10px;
 }
 
-.product__link-green {
+.product .product__link-green {
   background-color: var(--green);
 }
 
-.product__link-yellow {
+.product .product__link-yellow {
   background-color: var(--yellow);
 }
 
