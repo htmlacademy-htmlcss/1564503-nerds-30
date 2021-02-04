@@ -74,14 +74,17 @@ ul {
   background-color: var(--red);
   padding: 10px;
 }
+
 .product h3 {
   font-size: 24px;
   line-height: 30px;
 }
+
 .product p {
   font-size: 16px;
   line-height: 24px;
 }
+
 .product a {
   font-weight: 500;
   font-size: 16px;
@@ -90,38 +93,47 @@ ul {
   background-color: var(--red);
   padding: 10px;
 }
-.product a.green {
+
+.product__link-green {
   background-color: var(--green);
 }
-.product a.yellow {
+
+.product__link-yellow {
   background-color: var(--yellow);
 }
+
 .about__title {
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
 }
+
 .about__info {
   font-size: 16px;
   line-height: 24px;
 }
+
 .about__header {
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
-} 
+}
+
 .about__list {
   font-size: 16px;
   line-height: 24px;
 }
+
 table span {
   font-size: 45px;
   line-height: 64px;
 }
+
 table span sup {
   font-size: 26px;
   line-height: 40px;
 }
+
 table p {
   font-size: 16px;
   line-height: 18px;
@@ -132,7 +144,7 @@ table p {
 }
 
 .companies__block:hover img {
- opacity: 1;
+  opacity: 1;
 }
 
 .contact__block h3 {
