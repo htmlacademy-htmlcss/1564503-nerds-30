@@ -50,7 +50,7 @@ img {
 }
 
 .container {
-  width: 960px;
+  width: 40%;
   min-height: 100%;
   margin: 0 auto;
 }
@@ -284,6 +284,14 @@ table p {
   grid-template-columns: 400px 1fr;
 }
 
+.content__block :left {
+  float: left;
+}
+
+.content__block :right {
+  float: right;
+}
+
 .content legend {
   font-size: 18px;
   line-height: 30px;
@@ -312,10 +320,12 @@ table p {
   border: none;
 }
 
-.sort__block {
+.project {
   display: grid;
-  grid-template-rows: min-content 1fr min-content;
+  grid-template-columns: 1fr 1fr;
   align-content: start;
+  row-gap: 30px;
+  column-gap: 40px;
 }
 
 .sort__block legend {
