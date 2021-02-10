@@ -8,7 +8,7 @@
   --grey-light: #666666;
   --grey-social: #E1E1E1;
   --black-input: #283136;
-
+  --button-grey:#DBDBDB;
 }
 
 body {
@@ -50,7 +50,7 @@ img {
 }
 
 .container {
-  width: 40%;
+  width: 960px;
   min-height: 100%;
   margin: 0 auto;
 }
@@ -60,6 +60,7 @@ header {
   grid-template-columns:  1fr;
   align-content: center;
   background-color: var(--grey);
+  padding: 50px
 }
 
 .header__navigation {
@@ -67,7 +68,13 @@ header {
   grid-template-columns: 160px 1fr min-content;
 }
 
-
+.header__list {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 25%;
+  margin: 0;
+  align-items: center;
+}
 
 .header__list li a,
 .header__basket {
@@ -75,6 +82,8 @@ header {
   font-size: 16px;
   line-height: 30px;
   color: var(--black);
+  display: flex;
+  align-items: center;
 }
 
 .header__list li a:hover,
@@ -109,6 +118,11 @@ header {
   color: var(--white);
   background-color: var(--red);
   padding: 10px;
+}
+
+.slider__button {
+  display: flex;
+  justify-content: center;
 }
 
 .slider__item.item2,
@@ -240,6 +254,13 @@ table p {
   grid-template-columns: 0.5fr 1fr;
 }
 
+.footer__social{
+  margin: 0;
+  padding: 0 8%;
+  display: flex;
+  justify-content: space-between;
+}
+
 .footer a {
   background-color: var(--grey-social);
   width: 81px;
@@ -328,14 +349,54 @@ table p {
   column-gap: 40px;
 }
 
+.sort__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:  10px 0;
+}
+
+.sort__block span {
+  flex: 0 0 40%;
+}
+
+.sort__block button {
+  font-size: 0;
+}
+
+.sort__block ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 0 0 40%;
+}
+
 .sort__block legend {
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
+  display: flex;
+  justify-content: center;
 }
 
 fieldset {
   border: none;
+}
+
+.filter__grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter__grid label {
+  margin-left: 10px;
+}
+
+.filter__features {
+  display: flex;
+  flex-direction: column;
 }
 
 .sort__block .active {
@@ -349,6 +410,30 @@ fieldset {
   font-size: 14px;
   line-height: 18px;
   opacity: 0.3;
+}
+
+.pagination__block {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.pagination__block button {
+  border: none;
+  background-color: var(--grey);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 20px;
+  margin-right: 10px;
+}
+
+.pagination__block button.active {
+  border: 3px solid var(--button-grey);
+  background-color: var(--white);
 }
 
 .project__title{
@@ -376,6 +461,10 @@ fieldset {
 .project__hidden {
   background-color: var(--grey);
 }
+
+
+
+
 
 
 
