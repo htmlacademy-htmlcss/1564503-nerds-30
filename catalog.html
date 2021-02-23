@@ -51,27 +51,27 @@
               <fieldset class="filter__grid">
                 <legend>Сетка:</legend>
                 <div>
-                  <input type="radio" name="grid" id="grid_1" checked><label>Адаптивная</label>
+                  <input type="radio" name="grid" id="grid_1" checked><label for="grid_1">Адаптивная</label>
                 </div>
                 <div>
-                  <input type="radio" name="grid" id="grid_2"><label>Фиксированная</label>
+                  <input type="radio" name="grid" id="grid_2"><label for="grid_2">Фиксированная</label>
                 </div>
                 <div>
-                  <input type="radio" name="grid" id="grid_3"><label>Резиновая</label>
+                  <input type="radio" name="grid" id="grid_3"><label for="grid_3">Резиновая</label>
                 </div>
               </fieldset>
               <fieldset class="filter__features">
                 <legend>Особенности:</legend>
+                <input type="checkbox" name="slider" id="slider">
                 <label for="slider" >Слайдер</label>
-                <input type="checkbox" name="slider">
-                <label for="advantages">Блок преимуществ</label>
                 <input type="checkbox" name="advantages" id="advantages">
+                <label for="advantages">Блок преимуществ</label>
+                <input type="checkbox" name="news" id="news" checked >
                 <label for="news">Новости</label>
-                <input type="checkbox" name="news" checked>
+                <input type="checkbox" name="gallery" id="gallery">
                 <label for="gallery">Галерея</label>
-                <input type="checkbox" name="gallery">
+                <input type="checkbox" name="bascet" id="bascet">
                 <label for="bascet">Корзина</label>
-                <input type="checkbox" name="bascet">
               </fieldset>
               <div class="filter__button">
                 <button type="submit">ПОКАЗАТЬ</button>
@@ -94,7 +94,7 @@
               </div>
             </form>
             <div class="project">
-              <div class="project__card">
+              <div class="block__project-card">
                 <img src="img/project/sedona.png" alt="sedona" width="358" height="578">
                 <div class="project__hidden">
                   <h3 class="project__title">SEDONA</h3>
@@ -130,14 +130,14 @@
         </section>
       </main>
       <footer class="footer container">
-        <div class="footer__block left">
+        <div class="footer__block-left">
           <ul class="footer__social">
             <li><a href="#"><img src="img/social/vk.svg" alt="vk" width="26" height="15"></a></li>
             <li><a href="#"><img src="img/social/fb.svg" alt="fb" width="26" height="15"></a></li>
             <li><a href="#"><img src="img/social/insta.svg" alt="insta" width="26" height="15"></a></li>
           </ul>
         </div>
-        <div class="footer__block right">
+        <div class="footer__block-right">
           <h2 class="footer__title">Давайте дружить, это выгодно!</h2>
           <p class="footer__info">Скидка 10% для друзей из социальных сетей.</p>
         </div>
