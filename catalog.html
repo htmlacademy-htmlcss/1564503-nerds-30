@@ -5,10 +5,10 @@
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicon/32.svg" type="image/svg+xml">
     <link rel="manifest" href="manifest.webmanifest">
-        <link rel="stylesheet" href="css/normalaze.css">
+    <link rel="stylesheet" href="css/normalaze.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
@@ -19,7 +19,7 @@
 				</a>
 	  			<ul class="header__list">
 	  				<li>
-						  <a href="#">Студия</a>
+						  <a href="./index.html">Студия</a>
 	  				</li>
 	  				<li>
 	  					<a href="#">Клиенты</a>
@@ -32,39 +32,62 @@
   				</li>
 	  			</ul>
 	  			<a class="header__basket" href="#">Корзина</a>
-	  		</nav>
+        </nav>
       </header>
+      <section class="title">
+        <h1 class="title__hidden">Нёрдс</h1>
+        <h2 class="title__page">Магазин готовых шаблонов</h2>
+      </section>
       <main class="container">
-        <section class="title">
-          <h1 class="title__hidden">Нёрдс</h1>
-          <h2 class="title__page">Магазин готовых шаблонов</h2>
-        </section>
         <section class="content">
           <div class="content__block left">
             <form class="filter" method="GET">
               <fieldset class="filter__price">
-                <legend>Стоимость:</legend>
-                <div class="filter__range">
-                  <input type="range" min="1" max="5" id="size" value="3">
-                </div>
+                  <fieldset class="filter-item">
+                      <legend>Стоимость:</legend>
+                      <div class="range-filter">
+                        <div class="range-controls">
+                          <div class="scale">
+                            <div class="bar"></div>
+                          </div>
+                          <div class="toggle toggle-min"></div>
+                          <div class="toggle toggle-max"></div>
+                        </div>
+                        <div class="price-controls">
+                          <label class="min-price">
+                            от <input type="number" name="min-price" value="0">
+                          </label>
+                          <label class="max-price">
+                            до <input type="number" name="max-price" value="15000">
+                          </label>
+                        </div>
+                      </div>
+                  </fieldset>
               </fieldset>
               <fieldset class="filter__grid">
                 <legend>Сетка:</legend>
-                <input type="radio" name="grid" id="grid_1" checked><label>Адаптивная</label>
-                <input type="radio" name="grid" id="grid_2"><label>Фиксированная</label>
-                <input type="radio" name="grid" id="grid_3"><label>Резиновая</label>
+                <div>
+                  <input type="radio" name="grid" id="grid_1" checked><label for="grid_1">Адаптивная</label>
+                </div>
+                <div>
+                  <input type="radio" name="grid" id="grid_2"><label for="grid_2">Фиксированная</label>
+                </div>
+                <div>
+                  <input type="radio" name="grid" id="grid_3"><label for="grid_3">Резиновая</label>
+                </div>
               </fieldset>
               <fieldset class="filter__features">
+                <legend>Особенности:</legend>
+                <input type="checkbox" name="slider" id="slider">
                 <label for="slider" >Слайдер</label>
-                <input type="checkbox" name="slider">
-                <label for="advantages">Блок преимуществ</label>
                 <input type="checkbox" name="advantages" id="advantages">
+                <label for="advantages">Блок преимуществ</label>
+                <input type="checkbox" name="news" id="news" checked >
                 <label for="news">Новости</label>
-                <input type="checkbox" name="news" checked>
+                <input type="checkbox" name="gallery" id="gallery">
                 <label for="gallery">Галерея</label>
-                <input type="checkbox" name="gallery">
+                <input type="checkbox" name="bascet" id="bascet">
                 <label for="bascet">Корзина</label>
-                <input type="checkbox" name="bascet">
               </fieldset>
               <div class="filter__button">
                 <button type="submit">ПОКАЗАТЬ</button>
@@ -73,8 +96,8 @@
           </div>
           <div class="content__block right">
             <form class="sort">
-              <fieldset class="sort__block">
-                <legend>Сортировать:</legend>
+              <div class="sort__block">
+                <span>Сортировать:</span>
                 <ul>
                   <li><a href="#" class="active">По цене</a></li>
                   <li><a href="#">По типу</a></li>
@@ -84,10 +107,11 @@
                   <button type="button">up</button>
                   <button type="button">down</button>
                 </div>
-              </fieldset>
+              </div>
             </form>
             <div class="project">
               <div class="project__card">
+                <img src="img/project/head_project.jpg" class="project__head" alt="Шапка" width="360" height="40">
                 <img src="img/project/sedona.png" alt="sedona" width="358" height="578">
                 <div class="project__hidden">
                   <h3 class="project__title">SEDONA</h3>
@@ -95,39 +119,90 @@
                     <a class="project__link">9 900 ₽</a>
                 </div>
               </div>
-              <div class="project__card"><img src="img/project/pink.png" alt="pink" width="358" height="578"></div>
-              <div class="project__card"><img src="img/project/barbershop.png" alt="barbershop" width="358" height="578"></div>
-              <div class="project__card"><img src="img/project/mishka.png" alt="mishka" width="358" height="578"></div>
-              <div class="project__card"><img src="img/project/aplus.png" alt="aplus" width="358" height="578"></div>
-              <div class="project__card"><img src="img/project/kvast.png" alt="kvast" width="358" height="578"></div>
+              <div class="project__card">
+                <img src="img/project/head_project.jpg" class="project__head" alt="Шапка" width="360" height="40">
+                <img src="img/project/pink.png" alt="pink" width="358" height="578">
+                <div class="project__hidden">
+                  <h3 class="project__title">Pink App</h3>
+                  <p class="project__info">Продуктовый лендинг приложения для iOS и Android</p>
+                    <a class="project__link">9 900 ₽</a>
+                </div>  
+              </div>    
+              <div class="project__card">
+                <img src="img/project/head_project.jpg" class="project__head" alt="Шапка" width="360" height="40">
+                <img src="img/project/barbershop.png" alt="barbershop" width="358" height="578">
+                <div class="project__hidden">
+                  <h3 class="project__title">Barbershop</h3>
+                  <p class="project__info">Сайт салона красоты.Для мужчин, да.</p>
+                    <a class="project__link">9 900 ₽</a>
+                </div>  
+              </div> 
+              <div class="project__card">
+                <img src="img/project/head_project.jpg" class="project__head" alt="Шапка" width="360" height="40">
+                <img src="img/project/mishka.png" alt="mishka" width="358" height="578">
+                <div class="project__hidden">
+                  <h3 class="project__title">MISHKA</h3>
+                  <p class="project__info">Интернет-магазин вязаных игрушек</p>
+                    <a class="project__link">9 900 ₽</a>
+                </div>  
+              </div>     
+              <div class="project__card">
+                <img src="img/project/head_project.jpg" class="project__head" alt="Шапка" width="360" height="40">
+                <img src="img/project/aplus.png" alt="aplus" width="358" height="578">
+                <div class="project__hidden">
+                  <h3 class="project__title">A Plus</h3>
+                  <p class="project__info">Лендинг курсов повышения квалификации</p>
+                    <a class="project__link">9 900 ₽</a>
+                </div>  
+              </div>      
+              <div class="project__card">
+                <img src="img/project/head_project.jpg" class="project__head" alt="Шапка" width="360" height="40">
+                <img src="img/project/kvast.png" alt="kvast" width="358" height="578">
+                <div class="project__hidden">
+                  <h3 class="project__title">КВАСТ</h3>
+                  <p class="project__info">Промо-сайт производителя крафтового кваса</p>
+                    <a class="project__link">9 900 ₽</a>
+                </div>  
+              </div>       
             </div>
-          </div>
-        </section>
-        <section class="contact">
-          <div class="contact__map">
-            <img src="img/map.jpg" alt="Карта" width="1440" height="416">
-            <div class="contact__point">Метка на карте</div>
-          </div>
-          <div class="contact__block">
-            <h3 class="contact__title">NЁRDS DESIGN STUDIO</h3>
-            <p class="contact__adress">191186, Санкт-Петербург,   ул. Б. Конюшенная, д. 19/8</p>
-            <a class="contact__tel" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-            <button class="contact__button" type="button">Напишите нам</button>
+            <div class="pagination__block">
+              <button type="button" class="active">1</button>
+              <button type="button" >2</button>
+              <button type="button" >3</button>
+              <button type="button" class="next">Следующая</button>
+            </div>
           </div>
         </section>
       </main>
       <footer>
-        <div class="footer__block left">
-          <ul class="footer__social">
-            <li><a href="#"><img src="img/social/vk.svg" alt="vk" width="26" height="15"></a></li>
-            <li><a href="#"><img src="img/social/fb.svg" alt="fb" width="26" height="15"></a></li>
-            <li><a href="#"><img src="img/social/insta.svg" alt="insta" width="26" height="15"></a></li>
-          </ul>
-        </div>
-        <div class="footer__block right">
-          <h2 class="footer__title">Давайте дружить, это выгодно!</h2>
-          <p class="footer__info">Скидка 10% для друзей из социальных сетей.</p>
-        </div>
+        <section class="contact">
+          <div class="contact__map">
+            <img src="img/map.jpg" alt="Карта" width="1440" height="416">
+          </div>
+          <div class="container">
+            <div class="contact__block">
+              <h3 class="contact__title">NЁRDS DESIGN STUDIO</h3>
+              <p class="contact__adress">191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д. 19/8</p>
+              <a class="contact__tel" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+              <button id="write" class="contact__button" type="button">Напишите нам</button>
+            </div>
+            <div class="contact__point">Метка на карте</div>
+          </div>
+        </section>
+        <section class="footer container">
+          <div class="footer__block-left">
+            <ul class="footer__social">
+              <li><a href="#"><img src="img/social/vk.svg" alt="vk" width="26" height="15"></a></li>
+              <li><a href="#"><img src="img/social/fb.svg" alt="fb" width="26" height="15"></a></li>
+              <li><a href="#"><img src="img/social/insta.svg" alt="insta" width="26" height="15"></a></li>
+            </ul>
+          </div>
+          <div class="footer__block-right">
+            <h2 class="footer__title">Давайте дружить, это выгодно!</h2>
+            <p class="footer__info">Скидка 10% для друзей из социальных сетей.</p>
+          </div>
+        </section>
       </footer>
+      <script src="./js/index.js"></script>
   </body>
 </html>
