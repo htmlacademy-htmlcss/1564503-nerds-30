@@ -6,9 +6,8 @@
     <link rel="icon" href="img/favicon/32.svg" type="image/svg+xml">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/normalaze.css">
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
@@ -22,16 +21,16 @@
 						  <a href="./index.html">Студия</a>
 	  				</li>
 	  				<li>
-	  					<a href="#">Клиенты</a>
+	  					<a href="#!">Клиенты</a>
 	  				</li>
 	  				<li>
  						  <a href="catalog.html">Магазин</a>
 	 				</li>
  					<li>
- 						<a href="#">Контакты</a>
+ 						<a href="#!">Контакты</a>
   				</li>
 	  			</ul>
-	  			<a class="header__basket" href="#">Корзина</a>
+	  			<a class="header__basket" href="#!">Корзина</a>
         </nav>
       </header>
       <section class="title">
@@ -41,28 +40,26 @@
       <main class="container">
         <section class="content">
           <div class="content__block left">
-            <form class="filter" method="GET">
+            <form class="filter" method="GET" action="https://echo.htmlacademy.ru/">
               <fieldset class="filter__price">
-                  <fieldset class="filter-item">
-                      <legend>Стоимость:</legend>
-                      <div class="range-filter">
-                        <div class="range-controls">
-                          <div class="scale">
-                            <div class="bar"></div>
-                          </div>
-                          <div class="toggle toggle-min"></div>
-                          <div class="toggle toggle-max"></div>
-                        </div>
-                        <div class="price-controls">
-                          <label class="min-price">
-                            от <input type="number" name="min-price" value="0">
-                          </label>
-                          <label class="max-price">
-                            до <input type="number" name="max-price" value="15000">
-                          </label>
-                        </div>
-                      </div>
-                  </fieldset>
+                <legend>Стоимость:</legend>
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
+                  </div>
+                  <div class="price-controls">
+                    <label class="min-price">
+                      от <input type="number" name="min-price" value="0">
+                    </label>
+                    <label class="max-price">
+                      до <input type="number" name="max-price" value="15000">
+                    </label>
+                  </div>
+                </div>
               </fieldset>
               <fieldset class="filter__grid">
                 <legend>Сетка:</legend>
@@ -99,9 +96,9 @@
               <div class="sort__block">
                 <span>Сортировать:</span>
                 <ul>
-                  <li><a href="#" class="active">По цене</a></li>
-                  <li><a href="#">По типу</a></li>
-                  <li><a href="#">По названию</a></li>
+                  <li><a href="#!" class="active">По цене</a></li>
+                  <li><a href="#!">По типу</a></li>
+                  <li><a href="#!">По названию</a></li>
                 </ul>
                 <div class="sort__buttons">
                   <button type="button">up</button>
@@ -114,54 +111,54 @@
                 <img src="img/project/head_project.jpg" class="project__head" alt="Шапка" width="360" height="40">
                 <img src="img/project/sedona.png" alt="sedona" width="358" height="578">
                 <div class="project__hidden">
-                  <h3 class="project__title">SEDONA</h3>
-                  <p class="project__info">Информационный сайт для туристов</p>
-                    <a class="project__link">9 900 ₽</a>
+                  <a href="#!" class="project__title">SEDONA</a>
+                  <p class="project__info">Информационный сайт<br> для туристов</p>
+                    <a href="#!" class="project__link">9 900 ₽</a>
                 </div>
               </div>
               <div class="project__card">
                 <img src="img/project/head_project.jpg" class="project__head" alt="Шапка" width="360" height="40">
                 <img src="img/project/pink.png" alt="pink" width="358" height="578">
                 <div class="project__hidden">
-                  <h3 class="project__title">Pink App</h3>
+                  <a href="#!" class="project__title">Pink App</a>
                   <p class="project__info">Продуктовый лендинг приложения для iOS и Android</p>
-                    <a class="project__link">9 900 ₽</a>
+                    <a href="#!" class="project__link">9 900 ₽</a>
                 </div>  
               </div>    
               <div class="project__card">
                 <img src="img/project/head_project.jpg" class="project__head" alt="Шапка" width="360" height="40">
                 <img src="img/project/barbershop.png" alt="barbershop" width="358" height="578">
                 <div class="project__hidden">
-                  <h3 class="project__title">Barbershop</h3>
+                  <a href="#!" class="project__title">Barbershop</a>
                   <p class="project__info">Сайт салона красоты.Для мужчин, да.</p>
-                    <a class="project__link">9 900 ₽</a>
+                    <a href="#!" class="project__link">9 900 ₽</a>
                 </div>  
               </div> 
               <div class="project__card">
                 <img src="img/project/head_project.jpg" class="project__head" alt="Шапка" width="360" height="40">
                 <img src="img/project/mishka.png" alt="mishka" width="358" height="578">
                 <div class="project__hidden">
-                  <h3 class="project__title">MISHKA</h3>
+                  <a href="#!" class="project__title">MISHKA</a>
                   <p class="project__info">Интернет-магазин вязаных игрушек</p>
-                    <a class="project__link">9 900 ₽</a>
+                    <a href="#!" class="project__link">9 900 ₽</a>
                 </div>  
               </div>     
               <div class="project__card">
                 <img src="img/project/head_project.jpg" class="project__head" alt="Шапка" width="360" height="40">
                 <img src="img/project/aplus.png" alt="aplus" width="358" height="578">
                 <div class="project__hidden">
-                  <h3 class="project__title">A Plus</h3>
+                  <a href="#!" class="project__title">A Plus</a>
                   <p class="project__info">Лендинг курсов повышения квалификации</p>
-                    <a class="project__link">9 900 ₽</a>
+                    <a href="#!" class="project__link">9 900 ₽</a>
                 </div>  
               </div>      
               <div class="project__card">
                 <img src="img/project/head_project.jpg" class="project__head" alt="Шапка" width="360" height="40">
                 <img src="img/project/kvast.png" alt="kvast" width="358" height="578">
                 <div class="project__hidden">
-                  <h3 class="project__title">КВАСТ</h3>
+                  <a href="#!" class="project__title">КВАСТ</a>
                   <p class="project__info">Промо-сайт производителя крафтового кваса</p>
-                    <a class="project__link">9 900 ₽</a>
+                    <a href="#!" class="project__link">9 900 ₽</a>
                 </div>  
               </div>       
             </div>
@@ -177,6 +174,7 @@
       <footer>
         <section class="contact">
           <div class="contact__map">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aebae3175e2a6a1fb769ede0e3b75080024a3808423423e2e92c5a4a07989f6c3&amp;source=constructor" width="100%" height="416" frameborder="0"></iframe>
             <img src="img/map.jpg" alt="Карта" width="1440" height="416">
           </div>
           <div class="container">
@@ -192,9 +190,9 @@
         <section class="footer container">
           <div class="footer__block-left">
             <ul class="footer__social">
-              <li><a href="#"><img src="img/social/vk.svg" alt="vk" width="26" height="15"></a></li>
-              <li><a href="#"><img src="img/social/fb.svg" alt="fb" width="26" height="15"></a></li>
-              <li><a href="#"><img src="img/social/insta.svg" alt="insta" width="26" height="15"></a></li>
+              <li><a href="#!"><img src="img/social/vk.svg" alt="vk" width="26" height="15"></a></li>
+              <li><a href="#!"><img src="img/social/fb.svg" alt="fb" width="26" height="15"></a></li>
+              <li><a href="#!"><img src="img/social/insta.svg" alt="insta" width="26" height="15"></a></li>
             </ul>
           </div>
           <div class="footer__block-right">
@@ -203,6 +201,35 @@
           </div>
         </section>
       </footer>
+      <div id="modal" class="modal__Layout">
+        <div class="modal__wrapper">
+          <div class="modal">
+            <div class="modal__title">
+              <h3>Напишите нам</h3>
+              <button class="close__button" id="close" type="button"></button>
+            </div>
+            <form action="POST">
+                <div class="modal__info"> 
+                  <div class="modal__input">
+                    <label for="name">Ваше имя:</label>
+                    <input id="name" type="name" name="name" placeholder="Имя Фамилия">
+                  </div>   
+                  <div class="modal__input">
+                    <label for="mail">Ваш Email:</label>
+                    <input id="mail" type="mail" name="mail"  placeholder="email@example.com">
+                  </div> 
+              </div>
+              <div class="modal__text">
+                <label for="text">Текст письма:</label>
+                <textarea id="text" name="text" placeholder="В свободной форме"></textarea>
+              </div>
+              <div>
+                <button id="send" class="modal__button" type="submit">Отправить</button>
+              </div>
+            </form>
+          </div> 
+        </div>
+      </div> 
       <script src="./js/index.js"></script>
   </body>
 </html>
