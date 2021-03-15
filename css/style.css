@@ -421,6 +421,8 @@ header {
 
 .contact__map iframe {
   z-index: 2;
+  width: 100%;
+  border: none;
 }
 
 .contact__map img {
@@ -843,6 +845,10 @@ fieldset {
   font-weight: 700;
   color: var(--black);
   opacity: 1;
+  width: 117px;
+  height: 30px;
+  overflow: hidden;
+  margin-left: 120px;
 }
 
 .project__title:active {
@@ -1062,6 +1068,17 @@ fieldset {
   padding-right: 100px;
   padding-top: 65px;
   padding-bottom: 85px;
+}
+ 
+ .modal__product{
+  position: fixed;
+  z-index: 100;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+
 }
 
 .modal__title {
