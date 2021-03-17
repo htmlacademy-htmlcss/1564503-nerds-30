@@ -882,8 +882,10 @@ fieldset {
   padding: 18px 0px;
   border: none;
   width: 200px;
+  height: 15px;
   border-radius: 5px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .project__hidden {
@@ -911,7 +913,12 @@ fieldset {
   text-align: center;
   justify-content: space-between;
   margin-top: 12px;
-  margin-bottom: 31px;
+  margin-bottom: 28px;
+  height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: pre;
+  max-height: 50px;
 }
 
 .project__card {
