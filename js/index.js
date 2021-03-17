@@ -53,7 +53,7 @@ window.addEventListener("keydown", function (e) {
 
 
 
-let slideIndex = 1;
+var slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -65,9 +65,9 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-  let i;
-  let slides = document.querySelectorAll('.slider .slider__item')
-  let dots = document.querySelectorAll('.slider .slider__button button')
+  var i;
+  var slides = document.querySelectorAll('.slider .slider__item')
+  var dots = document.querySelectorAll('.slider .slider__button button')
   if(slides.length>0) {
     if (n > slides.length) {
       slideIndex = 1
