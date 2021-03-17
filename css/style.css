@@ -845,10 +845,15 @@ fieldset {
   font-weight: 700;
   color: var(--black);
   opacity: 1;
-  width: 117px;
+  width: 130px;
   height: 30px;
   overflow: hidden;
-  margin-left: 120px;
+  margin-left: 115px;
+  text-overflow: ellipsis;
+  white-space: pre;
+  max-height: 50px;
+  text-transform: uppercase;
+
 }
 
 .project__title:active {
@@ -891,7 +896,7 @@ fieldset {
 }
 
 .project__title {
-  margin-top: 23px;
+  margin-top: 25px;
   margin-bottom: 0;
 }
 
@@ -906,7 +911,7 @@ fieldset {
   text-align: center;
   justify-content: space-between;
   margin-top: 12px;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 }
 
 .project__card {
@@ -1110,6 +1115,13 @@ fieldset {
   opacity: 1;
 }
 
+.close__button.product {
+  position: absolute;
+  top: 92px;
+  right: 520px;
+  padding-bottom: 0;
+}
+
 .modal__info {
   display: flex;
   justify-content: space-between;
@@ -1200,6 +1212,8 @@ fieldset {
   display: block;
   animation: Bounce 1.5s ease-in-out;
 }
+
+
 
 
 @keyframes Bounce {
