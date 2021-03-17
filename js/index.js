@@ -19,18 +19,17 @@ if (products.length > 0) {
     })
   })
 }
-
-productClose.addEventListener('click',(e)=> {
-  e.preventDefault()
-  modalProduct.classList.remove('active')
-})
-
+if(productClose) {
+  productClose.addEventListener('click',(e)=> {
+    e.preventDefault()
+    modalProduct.classList.remove('active')
+  })
+}
 
 button.addEventListener('click',function(e) {
   e.preventDefault()
   modal.classList.add('active')
 })
-
 
 closeBtn.addEventListener('click',function(e) {
   e.preventDefault()
