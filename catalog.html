@@ -5,9 +5,8 @@
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicon/32.svg" type="image/svg+xml">
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="stylesheet" href="css/normalaze.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/min.normalize.css">
+    <link rel="stylesheet" href="css/min.style.css">
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
@@ -54,10 +53,10 @@
                   </div>
                   <div class="price-controls">
                     <label class="min-price">
-                      от <input type="number" name="min-price" value="0">
+                      от <input type="number" name="min-price" step="1" min="1" value="0">
                     </label>
                     <label class="max-price">
-                      до <input type="number" name="max-price" value="15000">
+                      до <input type="number" name="max-price"  step="1" min="1" value="15000">
                     </label>
                   </div>
                 </div>
@@ -209,10 +208,10 @@
               <h3>Напишите нам</h3>
               <button class="close__button" id="close" type="button"></button>
             </div>
-            <form action="POST">
+            <form method="POST" action="https://echo.htmlacademy.ru/">
                 <div class="modal__info"> 
                   <div class="modal__input">
-                    <label for="text">Ваше имя:</label>
+                    <label for="name">Ваше имя:</label>
                     <input id="name" type="text" name="name" placeholder="Имя Фамилия">
                   </div>   
                   <div class="modal__input">
@@ -237,6 +236,6 @@
           <button class="close__button product" id="product__close" type="button"></button>
         </div>
       </div>
-      <script src="./js/index.js"></script>
+      <script src="./js/min.index.js"></script>
   </body>
 </html>
