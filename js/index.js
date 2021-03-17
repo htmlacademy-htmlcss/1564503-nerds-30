@@ -6,6 +6,8 @@ let slides = document.querySelectorAll('.slider__item')
 let products = document.querySelectorAll('.project__title')
 let modalProduct = document.getElementById('product__modal')
 let product__img = document.querySelector('#product__modal img')
+let productClose = document.getElementById('product__close')
+
 
 if (products.length > 0) {
   products.forEach(element => {
@@ -17,6 +19,11 @@ if (products.length > 0) {
     })
   })
 }
+
+productClose.addEventListener('click',(e)=> {
+  e.preventDefault()
+  modalProduct.classList.remove('active')
+})
 
 
 button.addEventListener('click',function(e) {
